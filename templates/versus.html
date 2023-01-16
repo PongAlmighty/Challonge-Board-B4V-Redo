@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script>
+      var lastupdate = {{ currenttime }};
+      function checkForUpdates() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            // parse the response from the server
+            var response = JSON.parse(this.responseText);
+            // if the data has been updated, refresh the page
+            if (response.data_updated > lastupdate) {
+              //refreshPage();
+              lastupdate = response.data_updated;
+              updateNames();
+            }
+          }
+        };
+        xhttp.open("GET", "https://challonge-board-b4v.themightypong.repl.co/update_check", true);
+        xhttp.send();
+      }
+
+      function updateNames() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            // parse the response from the server
+            var response = this.responseText;
+            var board = document.getElementById('divmatch');
+            board.innerHTML = response;
+          }
+        };
+        xhttp.open("GET", "https://challonge-board-b4v.themightypong.repl.co/versus_data", true);
+        xhttp.send();
+      }
+      // check for updates every 5 seconds
+      setInterval(checkForUpdates, 5000);
+    </script>  
+  </head>
+  <body>
+    <div class="VsLayout" id="divmatch">
+      {% extends 'versus_data.html' %}
+    </div>
+  
+    
+  </body>
+  
+</html>

@@ -1,0 +1,6 @@
+       {% for player in parent_list %}
+       <span class="LeaderboardSpacing">  
+          <span class="LeaderboardRank-{{player.losses}}">{{player.name}}</span>
+          <span class="LeaderboardNumbers">{{player.wins}} - {{player.losses}}</span>
+       </span>    
+       {% endfor %}

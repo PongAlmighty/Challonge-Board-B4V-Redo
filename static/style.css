@@ -1,0 +1,91 @@
+body {
+  background-color: #ffffff;
+}
+
+.VsLayout {
+  width: 1920px;
+  height: 1080px;
+
+  display: grid;
+  grid:
+    ". VsPlayer01Box ." 130px
+    ". VSTextBox ." 130px
+    ". VsPlayer02Box ." 130px
+    / 30% 60% 30%;
+  gap: 8px;
+
+  overflow-wrap: break-word;
+  white-space: nowrap;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.VsPlayer01Box { grid-area: VsPlayer01Box;
+                font-family: 'Oswald', sans-serif;
+                font-size: 100px;
+                font-weight: bold;
+                color: #000000;
+               }
+
+
+.VSTextBox { grid-area: VSTextBox;
+            font-family: 'Oswald', sans-serif;
+            font-size: 80px;
+            color: #ff0000;
+           }
+
+.VsPlayer02Box { grid-area: VsPlayer02Box;
+                font-family: 'Oswald', sans-serif;
+                font-size: 100px;
+                font-weight: bold;
+                color: #000000;
+               }
+
+
+.LeaderboardSpacing {
+  display: block;
+}
+
+.LeaderboardText {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  
+}
+
+.LeaderboardRank-0 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: red
+}
+
+.LeaderboardRank-1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: black
+}
+
+.LeaderboardRank-2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #878787
+}
+
+
+
+.LeaderboardNumbers {
+  font-family: 'Oswald', sans-serif;
+  color: #3a3a3a;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.LeaderboardSymbols {
+  color: #00FF00;
+  font-size: 100px;
+  font-weight: bold;
+}

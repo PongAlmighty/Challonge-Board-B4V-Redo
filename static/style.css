@@ -1,5 +1,5 @@
 body {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 .VsLayout {
@@ -25,27 +25,24 @@ body {
                 font-family: 'Oswald', sans-serif;
                 font-size: 100px;
                 font-weight: bold;
-                color: #000000;
+                color: #414042;
                }
 
 
 .VSTextBox { grid-area: VSTextBox;
             font-family: 'Oswald', sans-serif;
             font-size: 80px;
-            color: #ff0000;
+            color: #EF4123;
            }
 
 .VsPlayer02Box { grid-area: VsPlayer02Box;
                 font-family: 'Oswald', sans-serif;
                 font-size: 100px;
                 font-weight: bold;
-                color: #000000;
+                color: #414042;
                }
 
 
-.LeaderboardSpacing {
-  display: block;
-}
 
 .LeaderboardText {
   font-family: 'Oswald', sans-serif;
@@ -58,29 +55,50 @@ body {
   font-family: 'Oswald', sans-serif;
   font-size: 40px;
   font-weight: bold;
-  color: red
+  color: #EF4123
 }
 
 .LeaderboardRank-1 {
   font-family: 'Oswald', sans-serif;
   font-size: 40px;
   font-weight: bold;
-  color: black
+  color: #414042
 }
 
 .LeaderboardRank-2 {
   font-family: 'Oswald', sans-serif;
   font-size: 40px;
   font-weight: bold;
-  color: #878787
+  color: #999999
 }
+
+.LeaderboardSpacing {
+  width: 1920px;
+  height: 80px;
+
+  display: grid;
+  grid:
+    "LdrBrdNameBox LdrBrdScoreBox LdrBrdSpacer" 80px
+    / auto 100px 500px;
+  gap: 8px;
+
+  justify-content: end;
+  align-content: start;
+  justify-items: end;
+  align-items: end;
+}
+
+.LdrBrdNameBox { grid-area: LdrBrdNameBox; }
+.LdrBrdScoreBox { grid-area: LdrBrdScoreBox; }
+.LdrBrdSpacer { grid-area: LdrBrdSpacer; }
+
 
 
 
 .LeaderboardNumbers {
   font-family: 'Oswald', sans-serif;
   color: #3a3a3a;
-  font-size: 24px;
+  font-size: 35px;
   font-weight: bold;
 }
 

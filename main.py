@@ -11,9 +11,9 @@ import leaderboard
 
 # set creds:
 MyKey = os.environ['MyKey']  #<--- this needs changed to your API key
-MyName = os.environ['REPL_OWNER']  #<--- pull name from enviroment
+MyName = "themightypong"  #<--- Challonge Username
 MyProjectUrl = os.environ['REPL_SLUG']
-FullHostName = MyProjectUrl + "." + MyName
+FullHostName = MyProjectUrl + "." + os.environ['REPL_OWNER']
 TournID = 'z57xc9'  #<--- this needs changed to your tournament ID
 
 app = Flask(__name__)

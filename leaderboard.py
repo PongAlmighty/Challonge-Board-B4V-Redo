@@ -52,14 +52,14 @@ def leaderboard_records(tournament, participants, matches):
   except Exception as e:
     print(e)
 
-def leaderboard(app, tournament, participants, matches):
+def leaderboard(app, tournament, participants, matches, FullHostName):
   try:
 
     records = leaderboard_records(tournament, participants, matches)
     
 	  # format the HTML output using CSS styles
     with app.app_context():
-	    new_html = render_template('leaderboard.html', parent_list = records, currenttime=int(time.time()))
+	    new_html = render_template('leaderboard.html', parent_list = records, currenttime=int(time.time()), fullhost=FullHostName)
 
     return new_html  # return the updated HTML
       

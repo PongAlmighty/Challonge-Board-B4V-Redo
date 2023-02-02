@@ -3,8 +3,8 @@ body {
 }
 
 .VsLayout {
-  width: 1920px;
-  height: 1080px;
+  width: 1024px;
+  height: 768px;
 
   display: grid;
   grid:
@@ -73,13 +73,13 @@ body {
 }
 
 .LeaderboardSpacing {
-  width: 1920px;
-  height: 80px;
+  width: 1024px;
+  height: 75px;
 
   display: grid;
   grid:
     "LdrBrdNameBox LdrBrdScoreBox LdrBrdSpacer" 80px
-    / auto 100px 500px;
+    / auto 100px 200px;
   gap: 8px;
 
   justify-content: end;

@@ -22,13 +22,13 @@ def versus_players(tournament, participants, matches):
     print(e)
 
     
-def versus(app, tournament, participants, matches):
+def versus(app, tournament, participants, matches, FullHostName):
   try:
     P1Name, P2Name = versus_players(tournament, participants, matches)
   
     # format the HTML output using CSS styles
     with app.app_context():
-      new_html = render_template('versus.html', P1Name=P1Name, P2Name=P2Name, currenttime=int(time.time()))
+      new_html = render_template('versus.html', P1Name=P1Name, P2Name=P2Name, currenttime=int(time.time()), fullhost=FullHostName)
       return new_html  # return the updated HTML
   except Exception as e:
     print(e)

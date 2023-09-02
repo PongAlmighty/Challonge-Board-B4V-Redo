@@ -10,11 +10,11 @@ import leaderboard
 # (http://api.challonge.com/v1). for Challonge docs
 
 # set creds:
-MyKey = os.environ['MyKey']  #<--- this needs changed to your API key
+MyKey = os.environ['MyKey']  #<--- Challonge API key
 MyName = "themightypong"  #<--- Challonge Username
 MyProjectUrl = os.environ['REPL_SLUG']
 FullHostName = MyProjectUrl + "." + os.environ['REPL_OWNER']
-TournID = 'z57xc9'  #<--- this needs changed to your tournament ID
+TournID = 'B4LV23_3lb'  #<--- this needs changed to your tournament ID
 
 app = Flask(__name__)
 CORS(app)

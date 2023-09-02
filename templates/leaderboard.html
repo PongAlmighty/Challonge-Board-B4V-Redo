@@ -17,7 +17,7 @@
             }
           }
         };
-        xhttp.open("GET", "https://ChallongeBoardB4V2.themightypong.repl.co/update_check", true);
+        xhttp.open("GET", "https://{{ fullhost }}.repl.co/update_check", true);
         xhttp.send();
       }
 
@@ -31,7 +31,7 @@
             board.innerHTML = response;
           }
         };
-        xhttp.open("GET", "https://ChallongeBoardB4V2.themightypong.repl.co/leaderboard_data", true);
+        xhttp.open("GET", "https://{{ fullhost }}.repl.co/leaderboard_data", true);
         xhttp.send();
       }
       // check for updates every 5 seconds

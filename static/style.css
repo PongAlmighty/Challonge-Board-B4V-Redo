@@ -1,10 +1,10 @@
 body {
-  background-color: #FFFFFF;
+  background-color: #00FF00;
 }
 
 .VsLayout {
-  width: 1024px;
-  height: 768px;
+  width: 1920px;
+  height: 1080px;
 
   display: grid;
   grid:
@@ -22,7 +22,7 @@ body {
 }
 
 .VsPlayer01Box { grid-area: VsPlayer01Box;
-                font-family: 'Oswald', sans-serif;
+                font-family: 'Days One', sans-serif;
                 font-size: 100px;
                 font-weight: bold;
                 color: #414042;
@@ -30,13 +30,13 @@ body {
 
 
 .VSTextBox { grid-area: VSTextBox;
-            font-family: 'Oswald', sans-serif;
-            font-size: 80px;
+            font-family: 'Racing Sans One', sans-serif;
+            font-size: 120px;
             color: #EF4123;
            }
 
 .VsPlayer02Box { grid-area: VsPlayer02Box;
-                font-family: 'Oswald', sans-serif;
+                font-family: 'Days One', sans-serif;
                 font-size: 100px;
                 font-weight: bold;
                 color: #414042;
@@ -45,36 +45,37 @@ body {
 
 
 .LeaderboardText {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Days One', sans-serif;
   font-size: 40px;
   font-weight: bold;
   
 }
 
 .LeaderboardRank-0 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Days One', sans-serif;
   font-size: 40px;
   font-weight: bold;
   color: #EF4123
 }
 
 .LeaderboardRank-1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Days One', sans-serif;
   font-size: 40px;
   font-weight: bold;
   color: #414042
 }
 
 .LeaderboardRank-2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Days One', sans-serif;
   font-size: 40px;
   font-weight: bold;
+  text-decoration: line-through;
   color: #999999
 }
 
 .LeaderboardSpacing {
   width: 1024px;
-  height: 75px;
+  height: 65px;
 
   display: grid;
   grid:
